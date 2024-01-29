@@ -27,3 +27,13 @@ C
 api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
 Ñ
 Tapi-gateway/src/test/java/com/application/apigateway/ApiGatewayApplicationTests.java,c\c\cc5085fa5bfef21766c003b86fd162ec24413893
+D
+service-a/.gitignore,c\2\c2446c4ea7448dad44b6460cede4a9a80c71c418
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+w
+G.idea/sonarlint/issuestore/c/2/c2446c4ea7448dad44b6460cede4a9a80c71c418,2\7\27bf07ca9441cf24737b1e21c6338f8ea8c1366e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+Å
+Q.idea/sonarlint/securityhotspotstore/c/2/c2446c4ea7448dad44b6460cede4a9a80c71c418,8\a\8a9adfb2c02d89cf34d6b56f30e696b426d74260
