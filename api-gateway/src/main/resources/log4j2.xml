@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}[%X{reqId}]-%p %m%n</Property>
+        <Property name="log-pattern">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}[%X{reqId}]-%p %m%n</Property>
+        <Property name="log-path">/var/logs/config-service</Property>
+        <Property name="log-name">application</Property>
+    </Properties>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        <RollingFile name="appLog"
+                     fileName="${log-path}/${log-name}.log"
+                     filePattern="${log-path}/${log-name}-%d{yyyy-MM-dd}/${log-name}-%d{HH:mm:ss}-%i.log.gz">
+            <PatternLayout pattern="${log-pattern}" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="50" compressionLevel="9"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+
+        <Logger name="com" additivity="false">
+            <AppenderRef ref="appLog" />
+            <AppenderRef ref="console" />
+        </Logger>
+
+        <Root level="debug">
+            <AppenderRef ref="appLog" />
+        </Root>
+    </Loggers>
+</Configuration>
