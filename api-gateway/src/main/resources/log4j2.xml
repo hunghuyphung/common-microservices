@@ -29,7 +29,7 @@
         </Logger>
 
         <Root level="debug">
-            <AppenderRef ref="appLog" />
+            <AppenderRef ref="console" />
         </Root>
     </Loggers>
 </Configuration>
